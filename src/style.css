@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+
+  :root {
+    --bookmark-purple: #5267DF;
+    --bookmark-red: #FA5959;
+    --bookmark-blue: #242A45;
+    --bookmark-grey: #9194A2;
+    --bookmark-white: #f7f7f7;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1124px) {
+    .xl\:container {
+      max-width: 1124px;
+    }
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .btn {
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300
+  }
+
+  .btn-purple {
+    @apply  text-white;
+    background-color: var(--bookmark-purple);
+  }
+
+  .btn-white {
+    background-color: var(--bookmark-white);
+  }
+
+  .btn-red {
+    @apply text-white rounded-md px-7 py-3;
+    background-color: var(--bookmark-red);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .text-bookmark-purple {
+    color: var(--bookmark-purple);
+  }
+
+  .text-bookmark-blue {
+    color: var(--bookmark-blue);
+  }
+
+  .text-bookmark-red {
+    color: var(--bookmark-red);
+  }
+
+  .hover\:bg-bookmark-white:hover {
+    background-color: var(--bookmark-white);
+  }
+  .hover\:bg-bookmark-purple:hover {
+    background-color: var(--bookmark-purple);
+  }
+  .hover\:text-black:hover {
+    color: black;
+  }
+
+}
+@layer components {
+  .bg-bookmark-red {
+    background-color: var(--bookmark-red);
+  }
+
+  .bg-bookmark-purple {
+    background-color: var(--bookmark-purple);
+  }
+
+  .bg-bookmark-white {
+    background-color: var(--bookmark-white);
+  }
+}
